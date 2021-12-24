@@ -20,6 +20,9 @@ module.exports = {
     '@typescript-eslint',
   ],
   rules: {
+    semi: ['error', 'never'],
+    indent: ['error', 2, { SwitchCase: 1 }],
+    'max-len': ['error', { code: 120 }],
     'comma-dangle': ['error', 'always-multiline'],
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': ['error'],
