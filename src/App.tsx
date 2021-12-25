@@ -13,8 +13,8 @@ const App: React.FC = () => {
     <main>
       <BrowserRouter>
         <Routes>
-          <Route path="/articles" element={<Articles />} />
-          <Route path="/reader" element={<Reader />} />
+          <Route path="/" element={<Articles />} />
+          <Route path="/reader/:id" element={<Reader />} />
           <Route path="/editor" element={<Editor />} />
           <Route path="/editor/:id" element={<Editor />} />
         </Routes>
